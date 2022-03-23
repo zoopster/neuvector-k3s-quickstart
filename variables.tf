@@ -1,3 +1,8 @@
+variable region {
+    type = string
+    default = "us-east-1"
+}
+
 variable cluster_count {
     type = number
     default = "1"
@@ -18,7 +23,7 @@ variable aws_ami {
 
 variable aws_az {
     type = string
-    default = "ap-southeast-2a"
+    default = "us-east-1a"
 }
 
 variable aws_vpc_security_groups {
