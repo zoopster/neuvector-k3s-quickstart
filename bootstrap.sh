@@ -16,21 +16,21 @@ spec:
   targetNamespace: neuvector-system
   repo: https://neuvector.github.io/neuvector-helm/
   chart: core
-  version: v1.9.0
+  version: v2.2.0-b1
   helmVersion: v3
   set:
     registry: docker.io
-    controller.image.repository: neuvector/controller.preview
+    controller.image.repository: neuvector/controller
     controller.replicas: 1
-    manager.image.repository: neuvector/manager.preview
+    manager.image.repository: neuvector/manager
     manager.replicas: 1
-    enforcer.image.repository: neuvector/enforcer.preview
-    cve.scanner.image.repository: neuvector/scanner.preview
+    enforcer.image.repository: neuvector/enforcer
+    cve.scanner.image.repository: neuvector/scanner
     cve.scanner.image.tag: latest
     cve.scanner.replicas: 1
-    cve.updater.image.repository: neuvector/updater.preview
+    cve.updater.image.repository: neuvector/updater
     cve.updater.image.tag: latest
-    tag: 5.0.0-preview.1
+    tag: 5.0.0-b1
     manager.ingress.enabled: "true"
     manager.ingress.host: neuvector.${PUBLIC_ADDRESS}.sslip.io
     manager.ingress.path: "/"
