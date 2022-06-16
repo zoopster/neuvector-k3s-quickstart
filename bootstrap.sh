@@ -16,7 +16,7 @@ spec:
   targetNamespace: neuvector-system
   repo: https://neuvector.github.io/neuvector-helm/
   chart: core
-  version: v2.2.0-b1
+  version: v2.2.0
   helmVersion: v3
   set:
     registry: docker.io
@@ -30,7 +30,7 @@ spec:
     cve.scanner.replicas: 1
     cve.updater.image.repository: neuvector/updater
     cve.updater.image.tag: latest
-    tag: 5.0.0-rc1
+    tag: 5.0.0
     manager.ingress.enabled: "true"
     manager.ingress.host: neuvector.${PUBLIC_ADDRESS}.sslip.io
     manager.ingress.path: "/"
